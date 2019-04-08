@@ -1,0 +1,32 @@
+{
+  "ver": "2.3.0",
+  "uuid": "2d7993bb-64fd-4ac8-a166-ce7c3ccda298",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "platformSettings": {},
+  "subMetas": {
+    "wallDecor3": {
+      "ver": "1.0.4",
+      "uuid": "9afeadcc-d4b6-421e-b16b-d41d4c455e15",
+      "rawTextureUuid": "2d7993bb-64fd-4ac8-a166-ce7c3ccda298",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 12,
+      "trimY": 1,
+      "width": 136,
+      "height": 127,
+      "rawWidth": 160,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
