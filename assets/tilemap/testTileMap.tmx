@@ -1,22 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextobjectid="25">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextobjectid="27">
  <tileset firstgid="1" source="perspective_walls.tsx"/>
  <tileset firstgid="17" source="desert.tsx"/>
  <tileset firstgid="65" source="rpg/beach_tileset.tsx"/>
- <imagelayer name="test-image-1" offsetx="7" offsety="-14">
-  <image source="sticker-knight/preview.png" width="2200" height="1700"/>
+ <tileset firstgid="1001" name="isometric_grass_and_water" tilewidth="64" tileheight="64" tilecount="24" columns="4">
+  <tileoffset x="0" y="16"/>
+  <grid orientation="isometric" width="64" height="32"/>
+  <image source="isometric_grass_and_water.png" width="256" height="384"/>
+  <terraintypes>
+   <terrain name="Grass" tile="0"/>
+   <terrain name="Water" tile="22"/>
+  </terraintypes>
+  <tile id="0" terrain="0,0,0,0"/>
+  <tile id="1" terrain="0,0,0,0"/>
+  <tile id="2" terrain="0,0,0,0"/>
+  <tile id="3" terrain="0,0,0,0"/>
+  <tile id="4" terrain="0,0,0,1"/>
+  <tile id="5" terrain="0,0,1,0"/>
+  <tile id="6" terrain="1,0,0,0"/>
+  <tile id="7" terrain="0,1,0,0"/>
+  <tile id="8" terrain="0,1,1,1"/>
+  <tile id="9" terrain="1,0,1,1"/>
+  <tile id="10" terrain="1,1,1,0"/>
+  <tile id="11" terrain="1,1,0,1"/>
+  <tile id="12" terrain="0,0,1,1"/>
+  <tile id="13" terrain="1,0,1,0"/>
+  <tile id="14" terrain="1,1,0,0"/>
+  <tile id="15" terrain="0,1,0,1"/>
+  <tile id="16" terrain="0,0,1,1"/>
+  <tile id="17" terrain="1,0,1,0"/>
+  <tile id="18" terrain="1,1,0,0"/>
+  <tile id="19" terrain="0,1,0,1"/>
+  <tile id="20" terrain="0,1,1,0"/>
+  <tile id="21" terrain="1,0,0,1"/>
+  <tile id="22" terrain="1,1,1,1"/>
+  <tile id="23" terrain="1,1,1,1"/>
+  <wangsets>
+   <wangset name="Grass and Water" tile="15">
+    <wangcornercolor name="Grass" color="#8ab022" tile="0" probability="1"/>
+    <wangcornercolor name="Water" color="#378dc2" tile="23" probability="1"/>
+    <wangtile tileid="0" wangid="0x10101010"/>
+    <wangtile tileid="1" wangid="0x10101010"/>
+    <wangtile tileid="2" wangid="0x10101010"/>
+    <wangtile tileid="3" wangid="0x10101010"/>
+    <wangtile tileid="4" wangid="0x10102010"/>
+    <wangtile tileid="5" wangid="0x10201010"/>
+    <wangtile tileid="6" wangid="0x20101010"/>
+    <wangtile tileid="7" wangid="0x10101020"/>
+    <wangtile tileid="8" wangid="0x10202020"/>
+    <wangtile tileid="9" wangid="0x20202010"/>
+    <wangtile tileid="10" wangid="0x20201020"/>
+    <wangtile tileid="11" wangid="0x20102020"/>
+    <wangtile tileid="12" wangid="0x10202010"/>
+    <wangtile tileid="13" wangid="0x20201010"/>
+    <wangtile tileid="14" wangid="0x20101020"/>
+    <wangtile tileid="15" wangid="0x10102020"/>
+    <wangtile tileid="16" wangid="0x10202010"/>
+    <wangtile tileid="17" wangid="0x20201010"/>
+    <wangtile tileid="18" wangid="0x20101020"/>
+    <wangtile tileid="19" wangid="0x10102020"/>
+    <wangtile tileid="20" wangid="0x10201020"/>
+    <wangtile tileid="21" wangid="0x20102010"/>
+    <wangtile tileid="22" wangid="0x20202020"/>
+    <wangtile tileid="23" wangid="0x20202020"/>
+   </wangset>
+  </wangsets>
+ </tileset>
+ <imagelayer name="test-image-1" opacity="0.5">
+  <image source="sticker-knight/preview.png" trans="d74634" width="2200" height="1700"/>
  </imagelayer>
- <layer name="test-layer-1" width="100" height="100" offsetx="12" offsety="-14">
+ <layer name="test-layer-1" width="100" height="100">
   <data encoding="base64" compression="zlib">
    eJzt06ENADEMALHCTvP7j9cRWukDDthSWFBOWQuAKd/w8I8eLXq06NGiR4seLXq06NGiR4seLXq03O67H3b0mOM/WvQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOg6MfcyKw==
   </data>
  </layer>
  <layer name="Tile Layer 2" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt0UEJAAAIADHtX89AFvCv4AaX4CIA4KfKOXb4AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwBUNxWIJ/Q==
+   eJzt0bENACAMA0GzFPMzBAOxAKlT5E763pITAJjprn/08AfUdnK6NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwCQPsc8K8w==
   </data>
  </layer>
- <objectgroup name="test-object-1" offsetx="69" offsety="36">
+ <objectgroup name="test-object-1">
   <object id="1" x="1508" y="190" width="57" height="36"/>
   <object id="2" x="1616" y="214" rotation="90">
    <point/>
@@ -24,7 +87,7 @@
   <object id="3" x="1692" y="210" width="101" height="29">
    <ellipse/>
   </object>
-  <object id="4" x="1434" y="241">
+  <object id="4" x="1335" y="238">
    <polygon points="0,0 10,43 75,37 35,-55 -57,-75 -60,49 -8,100 78,105 136,34"/>
   </object>
   <object id="5" x="1600" y="337">
@@ -34,16 +97,22 @@
   <object id="11" gid="26" x="1692" y="454" width="32" height="32"/>
   <object id="12" gid="26" x="1756" y="434" width="32" height="32"/>
   <object id="13" gid="26" x="1805" y="421" width="32" height="32"/>
-  <object id="14" x="1445.77" y="426.422" width="89.5469" height="18.8438" rotation="180">
-   <text wrap="1">Hello World</text>
+  <object id="14" x="1342.77" y="388.422" width="251.547" height="58.8438" rotation="20">
+   <text fontfamily="Lucida Grande" pixelsize="11" wrap="1" color="#d43332" halign="center" valign="center">Hello World 123456</text>
   </object>
-  <object id="18" gid="50" x="1311" y="127" width="32" height="32"/>
+  <object id="18" gid="3221225522" x="1311" y="127" width="32" height="10" rotation="40"/>
   <object id="19" gid="50" x="1311" y="545" width="32" height="32"/>
   <object id="20" gid="50" x="1921" y="545" width="32" height="32"/>
   <object id="21" gid="50" x="1920" y="127" width="32" height="32"/>
   <object id="22" gid="26" x="1726" y="131" width="32" height="32"/>
   <object id="23" gid="26" x="1815" y="142" width="32" height="32"/>
-  <object id="24" gid="26" x="1771" y="176" width="32" height="32"/>
+  <object id="24" gid="26" x="10" y="10" width="32" height="32"/>
+  <object id="25" x="1344.23" y="112.578" width="89.5469" height="18.8438">
+   <text wrap="1">Hello World</text>
+  </object>
+  <object id="26" x="1668.23" y="-37.4219" width="89.5469" height="18.8438">
+   <text wrap="1">Hello World</text>
+  </object>
  </objectgroup>
  <group name="test-group-1"/>
 </map>

@@ -15,6 +15,9 @@ cc.Class({
         var layer = this.getComponent(cc.TiledLayer);
         var tile = layer.getTiledTileAt(0, 22, true);
         var tileNode = tile.node;
+        // tileNode.x = 100;
+        // tileNode.y = 100;
+        // tileNode.color = cc.color(255, 0, 0);
         tileNode.runAction(cc.spawn(cc.scaleTo(2, 3, 3), cc.rotateTo(2, 90), cc.moveTo(2, 600, 300)));
     },
 
