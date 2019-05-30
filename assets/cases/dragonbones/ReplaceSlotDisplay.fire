@@ -228,7 +228,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "dbNode",
+    "_name": "robot",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -326,7 +326,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "replaceDBNode",
+    "_name": "knife",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -360,14 +360,14 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 653.298,
-      "y": 160.057,
+      "x": 204.747,
+      "y": 107.383,
       "z": 0
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 0.5,
+      "y": 0.5,
       "z": 1
     },
     "_eulerAngles": {
@@ -1255,10 +1255,10 @@
       "__id__": 2
     },
     "_enabled": true,
-    "armatureDisplay": {
+    "robot": {
       "__id__": 6
     },
-    "replaceArmatureDisplay": {
+    "knife": {
       "__id__": 8
     },
     "_id": "9aHxVnoDpKxKDgjYFDsNKJ"
